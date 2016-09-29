@@ -1,2 +1,3 @@
-# barivecchiabuzzbot
-Il bot per telegram con le frasi mitiche di Bari vecchia.
+# Telegram Echo Bot
+
+This is a sample Telegram Bot written in PHP running on Heroku
