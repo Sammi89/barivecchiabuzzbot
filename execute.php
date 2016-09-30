@@ -37,6 +37,11 @@ if(strpos($text, $bot_name) === 0)
 
 if ($inline) {
 	$text = trim(str_replace($bot_name, "", $text));
+	$parameters = array('chat_id' => $chatId, "text" => $text);
+// method è il metodo per l'invio di un messaggio (cfr. API di Telegram)
+$parameters["method"] = "sendMessage";
+// converto e stampo l'array JSON sulla response
+echo json_encode($parameters);
 }
 
 if(strpos($text, "/start") === 0 || $text=="ciao")
