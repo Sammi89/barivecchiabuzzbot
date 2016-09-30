@@ -29,12 +29,17 @@ header("Content-Type: application/json");
 // text è il testo della risposta
 
 $inline = 0;
-if(strpos($text, "@barivecchiabuzzbot") === 0)
+$bot_name = "@barivecchiabuzzbot";
+if(strpos($text, $bot_name) === 0)
 {
 	$inline = 1;
-	$response = "Verdiana fai la brava!";
 }
-elseif(strpos($text, "/start") === 0 || $text=="ciao")
+
+if ($inline) {
+	$text = trim(str_replace($bot_name, ""));
+}
+
+if(strpos($text, "/start") === 0 || $text=="ciao")
 {
 	$response = "Ciao $firstname, benvenuto!";
 }
@@ -46,9 +51,11 @@ elseif($text=="bastone")
 {
 	$response = "V c c t n v";
 }
-else
+elseif(strpos($text, "insulta")===0)
 {
-	$response = "Comando non valido!";
+	$loser = ucfirst(trim(str_replace("insulta", "")));
+	$insulti = array("$loser, piantala!", "$loser v d c t n v, v!", "$loser non tamburellare", "$loser fai poco la furba!");
+	$response = array_rand ($insulti);
 }
 
 $parameters = array('chat_id' => $chatId, "text" => $response);
