@@ -36,7 +36,7 @@ if(strpos($text, $bot_name) === 0)
 }
 
 if ($inline) {
-	$text = trim(str_replace($bot_name, ""));
+	$text = trim(str_replace($bot_name, "", $text));
 }
 
 if(strpos($text, "/start") === 0 || $text=="ciao")
@@ -53,7 +53,7 @@ elseif($text=="bastone")
 }
 elseif(strpos($text, "insulta")===0)
 {
-	$loser = ucfirst(trim(str_replace("insulta", "")));
+	$loser = ucfirst(trim(str_replace("insulta", "", $text)));
 	$insulti = array("$loser, piantala!", "$loser v d c t n v, v!", "$loser non tamburellare", "$loser fai poco la furba!");
 	$response = $insulti[array_rand($insulti)];
 }
