@@ -55,7 +55,7 @@ elseif(strpos($text, "insulta")===0)
 {
 	$loser = ucfirst(trim(str_replace("insulta", "")));
 	$insulti = array("$loser, piantala!", "$loser v d c t n v, v!", "$loser non tamburellare", "$loser fai poco la furba!");
-	$response = array_rand ($insulti);
+	$response = $insulti[array_rand($insulti)];
 }
 
 $parameters = array('chat_id' => $chatId, "text" => $response);
