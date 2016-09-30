@@ -34,8 +34,7 @@ if(strpos($text, "@barivecchiabuzzbot") === 0)
 	$inline = 1;
 	$response = "Verdiana fai la brava!";
 }
-
-if(strpos($text, "/start") === 0 || $text=="ciao")
+elseif(strpos($text, "/start") === 0 || $text=="ciao")
 {
 	$response = "Ciao $firstname, benvenuto!";
 }
