@@ -47,6 +47,10 @@ elseif($text == "/bari")
    "Le canestrell",
    "Orecchiette con le anglt",
    "Ehhhh, manco avessi detto 20 minuti",
+   "Io il pesce non lo mangio, lo schifo!",
+   "L'anglt, lu pesc",
+   "Le gambe non funzioooooooo!",
+   "Nn timbreshc!"
   );
   $response = $frasi[array_rand($frasi)];
 }
