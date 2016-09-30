@@ -32,18 +32,32 @@ if(strpos($text, "/start") === 0 || $text=="ciao")
 {
 	$response = "Ciao $firstname, benvenuto!";
 }
-elseif($text=="canestrelle")
+elseif($text=="/buzz")
 {
 	$response = "Tzzzzzz";
 }
-elseif($text=="bastone")
+elseif($text == "/bari")
 {
-	$response = "V c c t n v";
+	$frasi = array(
+   "C c ne sacciu io",
+   "V d c t n v v, cu sto bastn!",
+   "Peggio in peggio",
+   "Le canestrell",
+   "Orecchiette con le anglt",
+   "Ehhhh, manco avessi detto 20 minuti",
+  );
+  $response = $frasi[array_rand($frasi)];
 }
 elseif(strpos($text, "/insulta")===0)
 {
 	$loser = ucfirst(trim(str_replace("/insulta", "", $text)));
-	$insulti = array("$loser, piantala!", "$loser v d c t n v, v!", "$loser non tamburellare", "$loser fai poco la furba!");
+	$insulti = array(
+	 "$loser hai fatto una verdianata?!",
+	 "$loser è inutile che fai finta di lavorare!",
+	 "$loser non tamburellare!",
+	 "$loser fai poco la furba!",
+	 "Mena $loser, vedi di muoverti!"
+  );
 	$response = $insulti[array_rand($insulti)];
 }
 
