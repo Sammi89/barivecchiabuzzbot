@@ -40,9 +40,9 @@ elseif($text=="bastone")
 {
 	$response = "V c c t n v";
 }
-elseif(strpos($text, "insulta")===0)
+elseif(strpos($text, "/insulta")===0)
 {
-	$loser = ucfirst(trim(str_replace("insulta", "", $text)));
+	$loser = ucfirst(trim(str_replace("/insulta", "", $text)));
 	$insulti = array("$loser, piantala!", "$loser v d c t n v, v!", "$loser non tamburellare", "$loser fai poco la furba!");
 	$response = $insulti[array_rand($insulti)];
 }
