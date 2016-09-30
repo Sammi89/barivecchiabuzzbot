@@ -50,7 +50,13 @@ elseif($text == "/bari")
    "Io il pesce non lo mangio, lo schifo!",
    "L'anglt, lu pesc",
    "Le gambe non funzioooooooo!",
-   "Nn timbreshc!"
+   "Nn timbreshc!",
+   "La brace accesa",
+   "E non è una bella cousa!",
+   "T'agg ricr Nunzia",
+   "Che è ancora più meglio di",
+   "Patate, riso e CoCo",
+   "Il panzeresce",
   );
   $response = $frasi[array_rand($frasi)];
 }
