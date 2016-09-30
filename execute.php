@@ -28,6 +28,8 @@ header("Content-Type: application/json");
 // chat_id mi consente di rispondere allo specifico utente che ha scritto al bot
 // text è il testo della risposta
 
+$nothing = false;
+
 if(strpos($text, "/start") === 0 || $text=="ciao")
 {
 	$response = "Ciao $firstname, benvenuto!";
@@ -60,9 +62,14 @@ elseif(strpos($text, "/insulta")===0)
   );
 	$response = $insulti[array_rand($insulti)];
 }
+else {
+  $nothing = true;
+}
 
-$parameters = array('chat_id' => $chatId, "text" => $response);
-// method è il metodo per l'invio di un messaggio (cfr. API di Telegram)
-$parameters["method"] = "sendMessage";
-// converto e stampo l'array JSON sulla response
-echo json_encode($parameters);
+if (!$nothing) {
+  $parameters = array('chat_id' => $chatId, "text" => $response);
+  // method è il metodo per l'invio di un messaggio (cfr. API di Telegram)
+  $parameters["method"] = "sendMessage";
+  // converto e stampo l'array JSON sulla response
+  echo json_encode($parameters);
+}
