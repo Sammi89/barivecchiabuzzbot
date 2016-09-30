@@ -28,6 +28,13 @@ header("Content-Type: application/json");
 // chat_id mi consente di rispondere allo specifico utente che ha scritto al bot
 // text è il testo della risposta
 
+$inline = 0;
+if(strpos($text, "@barivecchiabuzzbot") === 0)
+{
+	$inline = 1;
+	$response = "Verdiana fai la brava!";
+}
+
 if(strpos($text, "/start") === 0 || $text=="ciao")
 {
 	$response = "Ciao $firstname, benvenuto!";
