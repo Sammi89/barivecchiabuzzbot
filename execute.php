@@ -68,6 +68,10 @@ elseif(strpos($text, "/insulta")===0)
 	 "$loser è inutile che fai finta di lavorare!",
 	 "$loser non tamburellare!",
 	 "$loser fai poco la furba!",
+	 "Mael fai schifo!",
+	 "$loser ti spacco il pc!",
+	 "$loser sei brutto come la fame!",
+	 "$loser puzzi!",
 	 "Mena $loser, vedi di muoverti!"
   );
 	$response = $insulti[array_rand($insulti)];
