@@ -80,33 +80,34 @@ elseif(strpos($text, "/insulta")===0)
 elseif($text == "/disp")
 {
 	$frasi = array(
-       "Garzie",
-       "help! paradisi fisclai",
-       "GRAZIE Mael, buona giornata",
-       "ci dato un occhio",
-       "arre publiche",
-       "rihìghe :)",
-       "...o un incipit diverso che atitri un pò",
-       "Non ci capisco più nulla...",
-       "abbaiamo",
-       "protoshoppare",
-       "che ne penate?",
-       "scusa, chi è scappato?",
-       "CIAO MAEL, GRAZIE",
-       "dobbaimo capire che dirli",
-       "io non mica so a che punto siamo...",
-       "PUBBLICAZIONE DOCUMETENTAZIONE",
-       "paola.vedrame@archibuzz.com",
-       "vi ho girato un ivirto a mdoificare",
-       "risposta a queat...",
-       "Io non so nulla...",
+        "Garzie",
+        "help! paradisi fisclai",
+        "GRAZIE Mael, buona giornata",
+        "ci dato un occhio",
+        "arre publiche",
+        "rihìghe :)",
+        "...o un incipit diverso che atitri un pò",
+        "Non ci capisco più nulla...",
+        "abbaiamo",
+        "protoshoppare",
+        "che ne penate?",
+        "scusa, chi è scappato?",
+        "CIAO MAEL, GRAZIE",
+        "dobbaimo capire che dirli",
+        "io non mica so a che punto siamo...",
+        "PUBBLICAZIONE DOCUMETENTAZIONE",
+        "paola.vedrame@archibuzz.com",
+        "vi ho girato un ivirto a mdoificare",
+        "risposta a queat...",
+        "Io non so nulla...",
         "Alla riunione non ci sarò",
         "Fai tu, è tutto prioritario",
         "Non fumiamoci le mail",
         "Bla bla bla...",
         "facciamo il punto",
         "chiedi a Roby che sa",
-        "Caio Male"
+        "Caio Male",
+        "oggi pomeoggio"
     );
     $response = $frasi[array_rand($frasi)];
 }
@@ -117,7 +118,9 @@ elseif($text == "/chanty")
         "noooo è già lui!?!?",
         "cellu",
         "ci lavoriamo ASAP",
-        "totale!"
+        "totale!",
+        "ehilààà",
+        "spettacoloooooooooooo"
     );
     $response = $frasi[array_rand($frasi)];
 }
