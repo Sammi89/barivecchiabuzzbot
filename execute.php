@@ -81,7 +81,6 @@ elseif($text == "/disp")
 {
 	$frasi = array(
        "Garzie",
-       "Skerzi a parte",
        "help! paradisi fisclai",
        "GRAZIE Mael, buona giornata",
        "ci dato un occhio",
@@ -99,7 +98,26 @@ elseif($text == "/disp")
        "PUBBLICAZIONE DOCUMETENTAZIONE",
        "paola.vedrame@archibuzz.com",
        "vi ho girato un ivirto a mdoificare",
-       "risposta a queat..."
+       "risposta a queat...",
+       "Io non so nulla...",
+        "Alla riunione non ci sarò",
+        "Fai tu, è tutto prioritario",
+        "Non fumiamoci le mail",
+        "Bla bla bla...",
+        "facciamo il punto",
+        "chiedi a Roby che sa",
+        "Caio Male"
+    );
+    $response = $frasi[array_rand($frasi)];
+}
+elseif($text == "/chanty")
+{
+	$frasi = array(
+       "graaaaaaaande",
+        "noooo è già lui!?!?",
+        "cellu",
+        "ci lavoriamo ASAP",
+        "totale!"
     );
     $response = $frasi[array_rand($frasi)];
 }
