@@ -77,6 +77,32 @@ elseif(strpos($text, "/insulta")===0)
   );
 	$response = $insulti[array_rand($insulti)];
 }
+elseif($text == "/disp")
+{
+	$frasi = array(
+       "Garzie",
+       "Skerzi a parte",
+       "help! paradisi fisclai",
+       "GRAZIE Mael, buona giornata",
+       "ci dato un occhio",
+       "arre publiche",
+       "rihìghe :)",
+       "...o un incipit diverso che atitri un pò",
+       "Non ci capisco più nulla...",
+       "abbaiamo",
+       "protoshoppare",
+       "che ne penate?",
+       "scusa, chi è scappato?",
+       "CIAO MAEL, GRAZIE",
+       "dobbaimo capire che dirli",
+       "io non mica so a che punto siamo...",
+       "PUBBLICAZIONE DOCUMETENTAZIONE",
+       "paola.vedrame@archibuzz.com",
+       "vi ho girato un ivirto a mdoificare",
+       "risposta a queat..."
+    );
+    $response = $frasi[array_rand($frasi)];
+}
 else {
   $nothing = true;
 }
